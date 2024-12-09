@@ -1,4 +1,4 @@
-body {
+body{
     width: 100vw;
     height: 100vh;
     background-image: url(../img/backroung.jpg);
@@ -16,18 +16,17 @@ body {
     background-color: Transparent;
     border: none
 }
-/* .row{
+.row{
     height: 100vh;
-} */
+}
  .score{
     font-size: xx-large;
     font-weight: 600;
-    font-c
  }
  
  h1{
     color: yellow;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2rem;
+    font-family:'Roboto Mono', monospace;
+    font-size:2rem;
     letter-spacing: 2px;
  }
