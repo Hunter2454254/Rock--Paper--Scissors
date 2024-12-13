@@ -1,4 +1,4 @@
-body{
+/* body{
     width: 100vw;
     height: 100vh;
     background-image: url(../img/backroung.jpg);
@@ -29,4 +29,81 @@ body{
     font-family:'Roboto Mono', monospace;
     font-size:2rem;
     letter-spacing: 2px;
- }
+ } */
+ body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/backroung.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: cyan;
+    font-weight: bold;
+}
+
+.img1 {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: yellow;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        width: 120px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
